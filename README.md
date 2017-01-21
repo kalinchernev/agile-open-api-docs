@@ -1,7 +1,7 @@
 # Agile Open API Documentation
 
 This repository demonstrates convenient workflow for developing both an API and its documentation in an effective way. 
-We integrate several tools supporting the [Open API specification](https://www.openapis.org/).(aka [Swagger specification](http://swagger.io/specification/))
+We integrate several tools supporting the [Open API specification](https://www.openapis.org/). (aka [Swagger specification](http://swagger.io/specification/))
 
 Main actors:
 - __[restify](https://www.npmjs.com/package/restify)__ - Simple API server
@@ -22,9 +22,9 @@ It basically shows how inter-connected watch tasks can work together letting you
 focus on your job while all the auto-generation happen in the background.
 
 
-## API-related tasks
+## API tasks
 
-```bash
+```
 // Develop the API server with nodemon
 $ npm run api:develop
 
@@ -35,20 +35,20 @@ $ npm run api:document
 $ npm run api
 ```
 
-## Documentation-related tasks
+## Documentation tasks
 
-```bash
+```
 // Develop the Swagger UI documentation
 $ npm run docs:develop
 ```
 Only `npm run docs` will do the same at this stage of the project.
 
 
-## Lint
+## Linting
 
 [Standard](https://www.npmjs.com/package/standard) is used for standardizing the JavaScript part. 
 
-```bash
+```
 $ npm run lint:js
 ```
 Only `npm run lint` will also work just fine at this stage of the project.
