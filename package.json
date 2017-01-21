@@ -1,12 +1,17 @@
 {
   "name": "agile-open-api-documentation",
   "version": "1.0.0",
-  "description": "Your live documentation living in your code. Less maintenance, more happiness.",
+  "description": "Documenting your API in an agile way.",
   "main": "index.js",
   "scripts": {
-    "lint": "standard",
-    "lint:fix": "standard --fix",
-    "start": "node index.js",
+    "api": "npm-run-all --parallel api:*",
+    "api:develop": "nodemon ./api/app.js",
+    "api:document": "swagger-jsdoc -d ./api/swaggerDefinition.js ./api/app.js -o ./api-docs/swagger.json -w",
+    "docs": "npm run docs:develop",
+    "docs:develop": "node ./scripts/docs_develop.js",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:js": "standard 'api/**/*.js' 'scripts/**/*.js'",
+    "start": "node ./api/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,6 +27,15 @@
     "restify": "^4.3.0"
   },
   "devDependencies": {
-    "standard": "^8.6.0"
+    "browser-sync": "^2.18.6",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.1",
+    "standard": "^8.6.0",
+    "swagger-jsdoc": "^1.9.0"
   }
 }

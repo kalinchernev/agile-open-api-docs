@@ -1,0 +1,27 @@
+{
+  "info": {
+    "title": "ACME API",
+    "version": "1.0.0",
+    "description": "ACME, not ECMA"
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "swagger": "2.0",
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Returns the base of the API",
+        "responses": {
+          "200": {
+            "description": "The very root of the API"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": []
+}
