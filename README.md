@@ -21,6 +21,8 @@ an API-first project with live documentation which comes from code.
 It basically shows how inter-connected watch tasks can work together letting you 
 focus on your job while all the auto-generation happen in the background.
 
+Read [this article](https://medium.com/@kalin.chernev/agile-documentation-for-your-api-driven-project-based-on-open-api-standards-11e54d4326bb#.2p8pw7ini) for detailed explanations.
+
 
 ## API tasks
 
