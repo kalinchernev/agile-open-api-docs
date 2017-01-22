@@ -8,7 +8,7 @@
     "api:develop": "nodemon ./api/app.js",
     "api:document": "swagger-jsdoc -d ./api/swaggerDefinition.js ./api/app.js -o ./api-docs/swagger.json -w",
     "docs": "npm run docs:develop",
-    "docs:develop": "node ./scripts/docs_develop.js",
+    "docs:develop": "browser-sync start -s 'api-docs' -f 'api-docs'",
     "lint": "npm-run-all --parallel lint:*",
     "lint:js": "standard 'api/**/*.js' 'scripts/**/*.js'",
     "start": "node ./api/app.js",
